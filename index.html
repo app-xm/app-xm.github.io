@@ -161,7 +161,7 @@ new Vue({
   },
   mounted () {
     axios
-      .get('json.php')
+      .get('https://xianmian.kzddck.com/json.php')
       .then(response => (this.data = response.data.data))
       .catch(function (error) { // 请求失败处理
         console.log(error);
